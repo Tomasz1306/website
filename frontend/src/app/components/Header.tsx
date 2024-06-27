@@ -1,18 +1,32 @@
-import Link from 'next/link';
+
+import {Link} from "@nextui-org/link";
+import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuToggle,  NavbarMenu,  NavbarMenuItem} from "@nextui-org/navbar";
+
 
 const Header = () => {
   return (
-    <header className="bg-retroBrown p-5 text-white text-center">
-      <div className="text-2xl font-retro">Moje Portfolio</div>
-      <nav>
-        <ul className="flex justify-center space-x-6">
-          <li><Link href="/home" className="hover:underline">Home</Link></li>
-          <li><Link href="/about" className="hover:underline">O mnie</Link></li>
-          <li><Link href="/projects" className="hover:underline">Projekty</Link></li>
-          <li><Link href="/contact" className="hover:underline">Kontakt</Link></li>
-        </ul>
-      </nav>
-    </header>
+    <Navbar className="bg-black">
+      <NavbarBrand>
+        <a href="/" className="font-sans text-green-600">Hexu</a>
+      </NavbarBrand>
+      <NavbarContent className="hidden sm:flex gap-4"  justify="center">
+        <NavbarItem>
+          <Link href="/home" className="text-green-600 font-sans">Home</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="/about" className="text-green-600 font-sans">About</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="/projects" className="text-green-600 font-sans">Projects</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="/contact" className="text-green-600 font-sans">Contact</Link>
+        </NavbarItem>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        
+      </NavbarContent>
+    </Navbar>
   );
 }
 
