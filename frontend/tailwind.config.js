@@ -40,6 +40,7 @@ module.exports = {
         white: '#FFFFFF',
         darkGreen: '#040D01',
         gradientGreen: '#003809',
+        navGreen: 'rgba(4,13,1,0.1)',
       },
       fontFamily: {
         retro: ['Courier New', 'Courier', 'monospace'],

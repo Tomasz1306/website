@@ -5,7 +5,7 @@ import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuTogg
 
 const Header = () => {
   return (
-    <Navbar className="bg-darkGreen">
+    <Navbar className=" bg-darkGreen" isBordered >
       <NavbarBrand>
         <a href="/" className="text-4xl font-mont text-white">Tomasz</a>
       </NavbarBrand>
