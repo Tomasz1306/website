@@ -5,26 +5,29 @@ import {  Navbar,   NavbarBrand,   NavbarContent,   NavbarItem,   NavbarMenuTogg
 
 const Header = () => {
   return (
-    <Navbar className="bg-black">
+    <Navbar className="bg-darkGreen">
       <NavbarBrand>
-        <a href="/" className="font-sans text-green-600">Hexu</a>
+        <a href="/" className="text-4xl font-mont text-white">Tomasz</a>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4"  justify="center">
         <NavbarItem>
-          <Link href="/home" className="text-green-600 font-sans">Home</Link>
+          <Link href="/home" className="text-4xl text-green font-mont">Home</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/about" className="text-green-600 font-sans">About</Link>
+          <Link href="/about" className="text-4xl text-green font-mont">About</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/projects" className="text-green-600 font-sans">Projects</Link>
+          <Link href="/projects" className="text-4xl text-green font-mont">Projects</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/contact" className="text-green-600 font-sans">Contact</Link>
+          <Link href="/projects" className="text-4xl text-green font-mont">Blog</Link>
         </NavbarItem>
+        
       </NavbarContent>
       <NavbarContent justify="end">
-        
+      <NavbarItem>
+          <Link href="/contact" className="text-4xl text-white font-mont">Contact</Link>
+        </NavbarItem>
       </NavbarContent>
     </Navbar>
   );
