@@ -1,10 +1,18 @@
+import C from '../public/icons/c.png'
+import C__ from '../public/icons/c__.png'
+import {Image} from "@nextui-org/react";
+
+
 export default function AboutPage() {
     return (
-      <section id="about" className="bg-retroBeige py-20 text-center">
-        <img src="/my-photo.jpg" alt="Moje zdjęcie" className="mx-auto w-40 rounded-full" />
-        <h2 className="text-3xl font-retro mt-5">O mnie</h2>
-        <p className="text-xl mt-3">Jestem studentem i pasjonatem technologii retro...</p>
-      </section>
+      <div className="h-screen bg-gradient-to-b from-gradientGreen to-black">
+        <div className="flex flex-row justify-center space-x-40">    
+        <div className="mt-20">
+          <Image className="" isZoomed  width={50} src={C.src} />
+          <Image className="" isZoomed  width={50} src={C__.src} />
+        </div>
+        </div>
+      </div>
     );
   }
   
